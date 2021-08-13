@@ -119,8 +119,8 @@ def main(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("input_path", type=Path, help="Split target file path")
-    parser.add_argument("output_dir", type=Path, help="Output directory path")
+    parser.add_argument("input_path", type=Path, help="Split target file path.")
+    parser.add_argument("output_dir", type=Path, help="Output directory path.")
     parser.add_argument(
         "-c",
         "--chunk",
@@ -135,7 +135,7 @@ if __name__ == "__main__":
         help="Do not show any message without error.",
     )
     parser.add_argument(
-        "-v", "--verbose", action="store_true", help="Show detail messages"
+        "-v", "--verbose", action="store_true", help="Show detail messages."
     )
 
     main(**vars(parser.parse_args()))
